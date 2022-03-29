@@ -4,11 +4,8 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <div ClassName="nav">
-          <Link to="/">Home</Link>
-        </div>
         <div className="nav">
-          <Link to="/Games">Games</Link>
+          <Link to="/">Home</Link>
         </div>
         <div className="nav">
           <Link to="/CreateList">Make A List</Link>

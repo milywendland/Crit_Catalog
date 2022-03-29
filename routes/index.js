@@ -8,4 +8,6 @@ router.get('/games', controllers.getAllGames)
 
 router.post('/games', controllers.addGame)
 
+router.get('/games/:id', controllers.getGame)
+
 module.exports = router

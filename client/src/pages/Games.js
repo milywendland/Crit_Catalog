@@ -19,7 +19,7 @@ const Games = () => {
   let navigate = useNavigate()
 
   const showGame = (gameId) => {
-    navigate(`/game/details/${gameId}`)
+    navigate(`/games/${gameId}`)
   }
 
   return (

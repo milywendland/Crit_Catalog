@@ -5,7 +5,7 @@ const Game = new Schema(
   {
     name: { type: String, required: true },
     type: { type: String, required: true },
-    description: { type: String, required: false },
+    description: { type: String, required: true },
     image: { type: String, required: true }
   },
   { timestamps: true }

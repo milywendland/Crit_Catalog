@@ -86,3 +86,11 @@ button {
 button:hover {
   background-color: #f2b705;
 }
+
+p {
+  color: whitesmoke;
+}
+
+p a {
+  color: #f2b705;
+}
