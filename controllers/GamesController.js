@@ -1,18 +1,6 @@
-const { Game } = require('../models/game.js')
+const { Game } = require('../models/index')
 
-const createGame = async (req, res) => {
-  try {
-    const game = await new Game(req.body)
-    await game.save()
-    return res.status.json({
-      game
-    })
-  } catch (error) {
-    return res.status.json({ error: error.message })
-  }
-}
-
-const getGames = async (req, res) => {
+const getAllGames = async (req, res) => {
   try {
     const games = await Game.find()
     return res.status(200).json({ games })
@@ -22,6 +10,5 @@ const getGames = async (req, res) => {
 }
 
 module.exports = {
-  getGames,
-  createGame
+  getAllGames
 }

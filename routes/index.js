@@ -4,6 +4,6 @@ const router = Router()
 
 router.get('/', (req, res) => res.send('this is root'))
 
-router.get('/games', controllers.getGames)
+router.get('/games', controllers.getAllGames)
 
 module.exports = router

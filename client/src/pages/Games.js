@@ -23,8 +23,8 @@ const Games = () => {
   }
 
   return (
-    <div>
-      <h2>All Games</h2>
+    <div className="bod">
+      <h2>Crit Catalog</h2>
       <section className="container">
         <div className="games-wrapper">
           {games.map((game) => (

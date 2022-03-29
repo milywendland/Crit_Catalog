@@ -3,7 +3,7 @@ const routes = require('./routes')
 const db = require('./db')
 const cors = require('cors')
 const logger = require('morgan')
-const { Game } = require('./models/game')
+const { Game } = require('./models')
 const PORT = process.env.PORT || 3001
 
 const app = express()
