@@ -55,3 +55,34 @@ img {
   border-radius: 10px;
   padding-top: 10px;
 }
+
+form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border: 3px solid darkslateblue;
+  border-radius: 10px;
+  color: whitesmoke;
+  margin: 10% 38%;
+}
+
+label {
+  margin: 15px;
+  font-size: 20px;
+}
+
+button {
+  background-color: darkslateblue;
+  color: whitesmoke;
+  border: 4px double whitesmoke;
+  border-radius: 8px;
+  width: 130px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #f2b705;
+}
