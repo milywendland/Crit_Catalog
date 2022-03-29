@@ -39,10 +39,10 @@ img {
   height: 250px;
 }
 
-.container {
-  padding: 2em 0;
-  display: flex;
-  justify-content: center;
+.games-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
 .card {
