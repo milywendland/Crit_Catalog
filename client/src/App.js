@@ -12,7 +12,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Games />} />
-          <Route path="/game/details/:gameId" element={<GameDetails />} />
+          <Route path="/game/:gameName/details" element={<GameDetails />} />
           <Route path="/About" element={<About />} />
           <Route path="/CreateList" element={<CreateList />} />
           <Route path="/SubmitGame" element={<SubmitGame />} />

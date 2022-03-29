@@ -6,7 +6,6 @@ const main = async () => {
   const games = [
     {
       name: 'Dungeons & Dragons',
-      id: '1',
       type: 'tabletop',
       image:
         'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.indiethoughts.com%2Fwp-content%2Fuploads%2F2016%2F12%2FDungeon-And-Dragons-1024x709.jpg&f=1&nofb=1',
@@ -16,7 +15,6 @@ const main = async () => {
 
     {
       name: 'Warhammer',
-      id: '2',
       type: 'tabletop',
       image:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Warhammer_Fantasy_RedCraig.jpg/300px-Warhammer_Fantasy_RedCraig.jpg',
@@ -26,7 +24,6 @@ const main = async () => {
 
     {
       name: 'Celestia',
-      id: '3',
       type: 'tabletop',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Facrosstheboardcafe.com%2Fwp-content%2Fuploads%2F2017%2F04%2Fpic2577990_md-480x480.jpg&f=1&nofb=1',
@@ -35,7 +32,6 @@ const main = async () => {
     },
     {
       name: 'Catan',
-      id: '4',
       type: 'tabletop',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thesprucecrafts.com%2Fthmb%2FUuBEHqW6x1JHT7aY25-3Im_0z78%3D%2F1500x1000%2Ffilters%3Afill(auto%2C1)%2Fsettlers-of-catan-initial-placement-strategies-412418_hero_3210-604e44cd981841f783ae47c9e46b7082.jpg&f=1&nofb=1',
@@ -45,7 +41,6 @@ const main = async () => {
 
     {
       name: 'Takenoko',
-      id: '5',
       type: 'tabletop',
       image:
         'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.fortressofsolitude.co.za%2Fwp-content%2Fuploads%2F2014%2F12%2FTakenoko-review.jpg&f=1&nofb=1',
@@ -55,7 +50,6 @@ const main = async () => {
 
     {
       name: 'Ticket to Ride',
-      id: '6',
       type: 'tabletop',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.m5yONBYJj3FztleEMCJQQgHaHa%26pid%3DApi&f=1',
@@ -65,7 +59,6 @@ const main = async () => {
 
     {
       name: 'Dixit',
-      id: '7',
       type: 'tabletop',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.boardgamehalv.com%2Fwp-content%2Fuploads%2F2020%2F05%2FDixit_BoardGame_GameBoxCardPool-770x513.jpg&f=1&nofb=1',
@@ -75,7 +68,6 @@ const main = async () => {
 
     {
       name: 'Wanderhome',
-      id: '8',
       type: 'tabletop',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthegaminggang.com%2Fwp-content%2Fuploads%2F2021%2F04%2Fwanderhome.jpg&f=1&nofb=1',
@@ -85,7 +77,6 @@ const main = async () => {
 
     {
       name: 'Jiangshi',
-      id: '9',
       type: 'tabletop',
       image:
         'https://www.gameandacurry.com/wp-content/uploads/2021/05/6-16-20-Book-Cover-Mock-Up-01-600x900-1.png',
@@ -95,7 +86,6 @@ const main = async () => {
 
     {
       name: 'Pandemic',
-      id: '10',
       type: 'tabletop',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.pocketgamer.com%2Fartwork%2Fna-qjcvomq%2Fpandemic.jpg&f=1&nofb=1',
@@ -105,7 +95,6 @@ const main = async () => {
 
     {
       name: 'King Arthur Pendragon 6E',
-      id: '11',
       type: 'tabletop',
       image:
         'https://assets.dicebreaker.com/King-arthur-pendragon-dandd-not-rpg-tabletop.png/BROK/resize/660%3E/format/jpg/quality/80/King-arthur-pendragon-dandd-not-rpg-tabletop.png',
@@ -115,7 +104,6 @@ const main = async () => {
 
     {
       name: 'Root: The Tabletop Roleplaying Game',
-      id: '12',
       type: 'tabletop',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FJg7IdFTci-k%2Fmaxresdefault.jpg&f=1&nofb=1',
@@ -125,7 +113,6 @@ const main = async () => {
 
     {
       name: 'The Adventure Zone: Bureau of Balance',
-      id: '13',
       type: 'tabletop',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Funfilteredgamer.com%2Fwp-content%2Fuploads%2F2021%2F01%2Fthe-adventure-zone-bureau-of-balance-header.jpg&f=1&nofb=1',
@@ -135,7 +122,6 @@ const main = async () => {
 
     {
       name: 'Illimat',
-      id: '14',
       type: 'tabletop',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.squarespace-cdn.com%2Fcontent%2Fv1%2F59824dd1cd0f68fa59fc32ce%2F1511233741774-B633JZTN75MXJNCLFCW8%2FIllimat_gamebox_mobile.png&f=1&nofb=1',
@@ -145,7 +131,6 @@ const main = async () => {
 
     {
       name: 'Star Wars: Rebellion',
-      id: '15',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/7SrPNGBKg9IIsP4UQpOi8g__imagepage/img/89ViRUkHkCJhvZA5fay7A9-46mY=/fit-in/900x600/filters:no_upscale():strip_icc()/pic4325841.jpg',
@@ -154,7 +139,6 @@ const main = async () => {
     },
     {
       name: 'Gaia Project',
-      id: '16',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/hGWFm3hbMlCDsfCsauOQ4g__imagepage/img/l0fffSKu6wscHhUNGWRh-0n-bqQ=/fit-in/900x600/filters:no_upscale():strip_icc()/pic5375625.png',
@@ -163,7 +147,6 @@ const main = async () => {
     },
     {
       name: 'Scythe',
-      id: '17',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/7k_nOxpO9OGIjhLq2BUZdA__imagepage/img/zoz-t_z9nqqxL7OwQenbqp9PRl8=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3163924.jpg',
@@ -172,7 +155,6 @@ const main = async () => {
     },
     {
       name: 'Dune: Imperium',
-      id: '18',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__imagepage/img/BjM3LyahJ4IQ2ov5MkzkHatbmUc=/fit-in/900x600/filters:no_upscale():strip_icc()/pic5666597.jpg',
@@ -182,7 +164,6 @@ const main = async () => {
 
     {
       name: 'Monopoly',
-      id: '19',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/9nGoBZ0MRbi6rdH47sj2Qg__imagepage/img/lxE4vGa3ef8a4brTRnvxGurt8I0=/fit-in/900x600/filters:no_upscale():strip_icc()/pic5786795.jpg',
@@ -192,7 +173,6 @@ const main = async () => {
 
     {
       name: 'Clue',
-      id: '20',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/owlmDA10KegcwPaapY5auw__imagepage/img/Rt9I1XN5Nl12_aGaLae2BP9nbDM=/fit-in/900x600/filters:no_upscale():strip_icc()/pic5146918.png',
@@ -201,7 +181,6 @@ const main = async () => {
     },
     {
       name: 'Risk',
-      id: '21',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/Oem1TTtSgxOghRFCoyWRPw__imagepage/img/4wrkUvOM1FWJ6PAlG0C-LbeQ984=/fit-in/900x600/filters:no_upscale():strip_icc()/pic4916782.jpg',
@@ -210,7 +189,6 @@ const main = async () => {
     },
     {
       name: 'Return to the Dark Tower',
-      id: '22',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/sd0acHeHj9RE-daXPC7pEg__imagepage/img/oGHznrJycteSVhD5q_JufudBTbs=/fit-in/900x600/filters:no_upscale():strip_icc()/pic5153383.jpg',
@@ -219,7 +197,6 @@ const main = async () => {
     },
     {
       name: 'Wingspan',
-      id: '23',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/yLZJCVLlIx4c7eJEWUNJ7w__imagepage/img/uIjeoKgHMcRtzRSR4MoUYl3nXxs=/fit-in/900x600/filters:no_upscale():strip_icc()/pic4458123.jpg',
@@ -228,7 +205,6 @@ const main = async () => {
     },
     {
       name: 'Gloomhaven',
-      id: '24',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/sZYp_3BTDGjh2unaZfZmuA__imagepage/img/pBaOL7vV402nn1I5dHsdSKsFHqA=/fit-in/900x600/filters:no_upscale():strip_icc()/pic2437871.jpg',
@@ -237,7 +213,6 @@ const main = async () => {
     },
     {
       name: 'Terraforming Mars',
-      id: '25',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/wg9oOLcsKvDesSUdZQ4rxw__imagepage/img/FS1RE8Ue6nk1pNbPI3l-OSapQGc=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3536616.jpg',
@@ -246,7 +221,6 @@ const main = async () => {
     },
     {
       name: 'Arkham Horror: The Card Game',
-      id: '26',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/RdCWCXPnBGSxoOhk5Hkq_g__imagepage/img/IjAnsFhA0onPRgYnLLsRG3PZHcI=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6530423.jpg',
@@ -255,7 +229,6 @@ const main = async () => {
     },
     {
       name: 'Everdell',
-      id: '27',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/fjE7V5LNq31yVEW_yuqI-Q__imagepage/img/ijYTk6KGtxLRdIvLsGar13ZHs4c=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3918905.png',
@@ -264,7 +237,6 @@ const main = async () => {
     },
     {
       name: 'Azul',
-      id: '28',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/tz19PfklMdAdjxV9WArraA__imagepage/img/K2rwaCiB7-p41iVG3_BCdUDBo8o=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3718275.jpg',
@@ -273,7 +245,6 @@ const main = async () => {
     },
     {
       name: '7 Wonders',
-      id: '29',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/RvFVTEpnbb4NM7k0IF8V7A__imagepage/img/zruHYxY2_jx-796WgsDj7hitidQ=/fit-in/900x600/filters:no_upscale():strip_icc()/pic860217.jpg',
@@ -282,7 +253,6 @@ const main = async () => {
     },
     {
       name: 'Eldritch Horror',
-      id: '30',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/oxdsZKIX5_3ovDo38EIaeg__imagepage/img/ier4keS2lwgi6bIJKhSDIKVDBmA=/fit-in/900x600/filters:no_upscale():strip_icc()/pic1872452.jpg',
@@ -291,7 +261,6 @@ const main = async () => {
     },
     {
       name: 'Candyland',
-      id: '31',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/97n-BYkjnFiHAhqUz-KTyw__imagepage/img/NnWtYK9qvj8J89RcqLwP5DKy7b8=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3542482.jpg',
@@ -300,7 +269,6 @@ const main = async () => {
     },
     {
       name: 'The Game of Life',
-      id: '32',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/c4S2XDRb_DCYCAV-ZAzDpg__imagepage/img/w6c1ugeBPWsIC5d-nX9vHZ4l0jo=/fit-in/900x600/filters:no_upscale():strip_icc()/pic288405.jpg',
@@ -309,7 +277,6 @@ const main = async () => {
     },
     {
       name: 'Mouse Trap',
-      id: '33',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/124yUSKLBKAfDQfsRFSIhA__imagepage/img/fCz1HRQ6R1_pzbLuhzI4CvwK-Is=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3811222.jpg',
@@ -318,7 +285,6 @@ const main = async () => {
     },
     {
       name: 'The Oregon Trail Card Game',
-      id: '34',
       type: 'tabletop',
       image:
         'https://cf.geekdo-images.com/XWqPHkKsgu8l9FzuvQg_kw__imagepage/img/-FvfQZ6dq2VX0aXs9outY6WCz0A=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3120649.jpg',
@@ -326,7 +292,6 @@ const main = async () => {
     },
     {
       name: 'Elden Ring',
-      id: '35',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wccftech.com%2Fwp-content%2Fuploads%2F2021%2F06%2FER_KEY-ART-scaled-e1623411764381-2048x1052.jpg&f=1&nofb=1',
@@ -335,7 +300,6 @@ const main = async () => {
     },
     {
       name: 'Stray',
-      id: '36',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.taminggaming.com%2Fcms%2Fgraphics%2Fscreen_shot_2647.jpg&f=1&nofb=1',
@@ -344,7 +308,6 @@ const main = async () => {
     },
     {
       name: 'World of Warcraft',
-      id: '37',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fleviathyn.com%2Fwp-content%2Fuploads%2F2012%2F08%2FWorld-of-Warcraft-Game-Box1.jpg&f=1&nofb=1',
@@ -353,7 +316,6 @@ const main = async () => {
     },
     {
       name: 'Lost Ark',
-      id: '38',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.vg247.com%2Fcurrent%2F2018%2F11%2Flostark3.jpg&f=1&nofb=1',
@@ -362,7 +324,6 @@ const main = async () => {
     },
     {
       name: 'FAR: Changing Tides',
-      id: '39',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnintendoeverything.com%2Fwp-content%2Fuploads%2Ffar-changing-tides-1-656x376.jpg&f=1&nofb=1',
@@ -371,7 +332,6 @@ const main = async () => {
     },
     {
       name: 'Pokemon Red and Blue',
-      id: '40',
       type: 'video game',
       image:
         'https://static.wikia.nocookie.net/nintendo/images/5/59/Pokemon_Red_%28NA%29.png/revision/latest?cb=20120331144754&path-prefix=en',
@@ -380,7 +340,6 @@ const main = async () => {
     },
     {
       name: 'Pokemon Gold and Silver',
-      id: '41',
       type: 'video game',
       image:
         'https://static.wikia.nocookie.net/nintendo/images/0/08/Pokemon_Gold_%28NA%29.jpg/revision/latest/scale-to-width-down/350?cb=20111104144754&path-prefix=en',
@@ -389,7 +348,6 @@ const main = async () => {
     },
     {
       name: 'Pokemon Ruby and Sapphire',
-      id: '42',
       type: 'video game',
       image:
         'https://static.wikia.nocookie.net/nintendo/images/a/aa/Pokemon_Ruby_%28NA%29.jpg/revision/latest/scale-to-width-down/350?cb=20140822024920&path-prefix=en',
@@ -398,7 +356,6 @@ const main = async () => {
     },
     {
       name: 'Pokemon Diamond and Pearl',
-      id: '43',
       type: 'video game',
       image:
         'https://static.wikia.nocookie.net/nintendo/images/2/20/Pokemon_Diamond_%28NA%29.jpg/revision/latest/scale-to-width-down/350?cb=20210213015750&path-prefix=en',
@@ -407,7 +364,6 @@ const main = async () => {
     },
     {
       name: 'Pokemon Black and White',
-      id: '44',
       type: 'video game',
       image:
         'https://static.wikia.nocookie.net/nintendo/images/8/8d/Pokemon_Black_%28NA%29.png/revision/latest/scale-to-width-down/350?cb=20120927155809&path-prefix=en',
@@ -416,7 +372,6 @@ const main = async () => {
     },
     {
       name: 'Pokemon X and Y',
-      id: '45',
       type: 'video game',
       image:
         'https://static.wikia.nocookie.net/nintendo/images/7/75/Pok%C3%A9mon_X_%28NA%29.png/revision/latest/scale-to-width-down/350?cb=20131102210731&path-prefix=en',
@@ -425,7 +380,6 @@ const main = async () => {
     },
     {
       name: 'Pokemon Sun and Moon',
-      id: '46',
       type: 'video game',
       image:
         'https://static.wikia.nocookie.net/nintendo/images/a/a2/Pokemon_Moon_%28NA%29.png/revision/latest/scale-to-width-down/350?cb=20170117055107&path-prefix=en',
@@ -434,7 +388,6 @@ const main = async () => {
     },
     {
       name: 'Pokemon Sword and Sheild',
-      id: '47',
       type: 'video game',
       image:
         'https://static.wikia.nocookie.net/nintendo/images/3/3c/Pok%C3%A9mon_Sword_US_boxart.png/revision/latest/scale-to-width-down/309?cb=20190607105234&path-prefix=en',
@@ -443,7 +396,6 @@ const main = async () => {
     },
     {
       name: 'Pokemon Legends: Arceus',
-      id: '48',
       type: 'video game',
       image:
         'https://static.wikia.nocookie.net/nintendo/images/9/9c/Pokemon_Legends_Arceus_cover.jpg/revision/latest/scale-to-width-down/246?cb=20220127004029&path-prefix=en',
@@ -452,7 +404,6 @@ const main = async () => {
     },
     {
       name: 'Pokemon Snap',
-      id: '49',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn02.nintendo-europe.com%2Fmedia%2Fimages%2F11_square_images%2Fgames_18%2Fnintendo_9%2FSQ_N64_PokemonSnap.jpg&f=1&nofb=1',
@@ -461,7 +412,6 @@ const main = async () => {
     },
     {
       name: 'Kirby the Forgotten Land',
-      id: '50',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Dn-_PNpo3jIudSypTrg8iwHaDt%26pid%3DApi&f=1',
@@ -470,7 +420,6 @@ const main = async () => {
     },
     {
       name: 'Sonic the Hedgehog',
-      id: '51',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FJqQYDLcvkBc%2Fmaxresdefault.jpg&f=1&nofb=1',
@@ -479,7 +428,6 @@ const main = async () => {
     },
     {
       name: 'Road Rash',
-      id: '52',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F1a%2Fc5%2F70%2F1ac57018ce554a6d9f9054bbc65c48d6.jpg&f=1&nofb=1',
@@ -488,7 +436,6 @@ const main = async () => {
     },
     {
       name: 'X-Men 2: Clone Wars',
-      id: '53',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvgmsite.com%2Fsoundtracks%2Fx-men-2-clone-wars-complete-original-game-soundtrack%2FFront.png&f=1&nofb=1',
@@ -497,7 +444,6 @@ const main = async () => {
     },
     {
       name: 'The Legend of Zelda',
-      id: '54',
       type: 'video game',
       image:
         'https://upload.wikimedia.org/wikipedia/en/4/41/Legend_of_zelda_cover_%28with_cartridge%29_gold.png',
@@ -506,7 +452,6 @@ const main = async () => {
     },
     {
       name: 'The Legend of Zelda: A Link to the Past',
-      id: '55',
       type: 'video game',
       image:
         'https://upload.wikimedia.org/wikipedia/en/2/21/The_Legend_of_Zelda_A_Link_to_the_Past_SNES_Game_Cover.jpg',
@@ -515,7 +460,6 @@ const main = async () => {
     },
     {
       name: 'The Legend of Zelda: Ocarina of Time',
-      id: '56',
       type: 'video game',
       image:
         'https://upload.wikimedia.org/wikipedia/en/5/57/The_Legend_of_Zelda_Ocarina_of_Time.jpg',
@@ -524,7 +468,6 @@ const main = async () => {
     },
     {
       name: "The Legend of Zelda: Majora's Mask",
-      id: '57',
       type: 'video game',
       image:
         'https://upload.wikimedia.org/wikipedia/en/6/60/The_Legend_of_Zelda_-_Majora%27s_Mask_Box_Art.jpg',
@@ -533,7 +476,6 @@ const main = async () => {
     },
     {
       name: 'The Legend of Zelda: Twilight Princess',
-      id: '58',
       type: 'video game',
       image:
         'https://upload.wikimedia.org/wikipedia/en/0/0e/The_Legend_of_Zelda_Twilight_Princess_Game_Cover.jpg',
@@ -542,7 +484,6 @@ const main = async () => {
     },
     {
       name: 'The Legend of Zelda: Skyward Sword',
-      id: '59',
       type: 'video game',
       image:
         'https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Legend_of_Zelda_Skyward_Sword_boxart.png/220px-Legend_of_Zelda_Skyward_Sword_boxart.png',
@@ -551,7 +492,6 @@ const main = async () => {
     },
     {
       name: 'The Legend of Zelda: Breath of the Wild',
-      id: '60',
       type: 'video game',
       image:
         'https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg/220px-The_Legend_of_Zelda_Breath_of_the_Wild.jpg',
@@ -560,7 +500,6 @@ const main = async () => {
     },
     {
       name: 'Journey',
-      id: '61',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.PsMkkDpS7W4lTdImDqQdYAHaEK%26pid%3DApi&f=1',
@@ -569,7 +508,6 @@ const main = async () => {
     },
     {
       name: 'Stardew Valley',
-      id: '62',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fksassets.timeincuk.net%2Fwp%2Fuploads%2Fsites%2F54%2F2018%2F03%2Fstardew-valley.jpg&f=1&nofb=1',
@@ -578,7 +516,6 @@ const main = async () => {
     },
     {
       name: "No Man's Sky",
-      id: '63',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.vox-cdn.com%2Fthumbor%2FJWHlaIg92J_v-6Yt0SNsccuP7Yo%3D%2F0x0%3A8430x2964%2F1200x800%2Ffilters%3Afocal(3541x808%3A4889x2156)%2Fcdn.vox-cdn.com%2Fuploads%2Fchorus_image%2Fimage%2F59775623%2FCoverWide.0.jpg&f=1&nofb=1',
@@ -587,7 +524,6 @@ const main = async () => {
     },
     {
       name: 'Astroneer',
-      id: '64',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstore-images.s-microsoft.com%2Fimage%2Fapps.54149.13510798887933723.57e43f19-4066-429e-b1a2-caea56e427b4.dcf4a36f-b6bf-4cbd-809f-f4dfd75f32b9%3Fmode%3Dscale%26q%3D90%26h%3D1080%26w%3D1920&f=1&nofb=1',
@@ -596,7 +532,6 @@ const main = async () => {
     },
     {
       name: 'Minecraft',
-      id: '65',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages10.newegg.com%2FBizIntell%2Fitem%2F78%2F190%2F78-190-756%2F22.jpg&f=1&nofb=1',
@@ -605,7 +540,6 @@ const main = async () => {
     },
     {
       name: 'The Witcher 3',
-      id: '66',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpcinvasion.com%2Fwp-content%2Fuploads%2F2014%2F09%2FThe-Witcher-3-01.jpg&f=1&nofb=1',
@@ -614,7 +548,6 @@ const main = async () => {
     },
     {
       name: 'Dragon Age: Origins',
-      id: '67',
       type: 'video game',
       image:
         'https://upload.wikimedia.org/wikipedia/en/thumb/8/89/Dragon_Age_Origins_cover.png/220px-Dragon_Age_Origins_cover.png',
@@ -623,7 +556,6 @@ const main = async () => {
     },
     {
       name: 'Dragon Age II',
-      id: '68',
       type: 'video game',
       image:
         'https://upload.wikimedia.org/wikipedia/en/thumb/6/61/Dragon_Age_2_cover.jpg/220px-Dragon_Age_2_cover.jpg',
@@ -632,7 +564,6 @@ const main = async () => {
     },
     {
       name: 'Bayonetta',
-      id: '69',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.videogameschronicle.com%2Ffiles%2F2019%2F12%2Fbayonetta-z.jpg&f=1&nofb=1',
@@ -641,7 +572,6 @@ const main = async () => {
     },
     {
       name: 'Borderlands',
-      id: '70',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.CJqtMkM5jpeoRJK6uej--wHaEk%26pid%3DApi&f=1',
@@ -650,7 +580,6 @@ const main = async () => {
     },
     {
       name: 'Rimworld',
-      id: '71',
       type: 'video',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F866pKJDoHj4%2Fmaxresdefault.jpg&f=1&nofb=1',
@@ -659,7 +588,6 @@ const main = async () => {
     },
     {
       name: 'Animal Crossing',
-      id: '72',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Focremix.org%2Ffiles%2Fimages%2Fgames%2Fgcn%2F1%2Fanimal-crossing-gcn-cover-front-46203.jpg&f=1&nofb=1',
@@ -668,7 +596,6 @@ const main = async () => {
     },
     {
       name: 'Animal Crossing: Wild World',
-      id: '73',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwiimedia.ign.com%2Fwii%2Fimage%2Fobject%2F682%2F682878%2FWildWorldFinalBox.jpeg&f=1&nofb=1',
@@ -677,7 +604,6 @@ const main = async () => {
     },
     {
       name: 'Animal Crossing: New Leaf',
-      id: '74',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi.huffpost.com%2Fgen%2F1171668%2Fimages%2Fo-ANIMAL-CROSSING-facebook.jpg&f=1&nofb=1',
@@ -686,7 +612,6 @@ const main = async () => {
     },
     {
       name: 'Animal Crossing: New Horizons',
-      id: '75',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.windowsreport.com%2Fwp-content%2Fuploads%2F2020%2F05%2FAnimal-Crossing-New-Horizons.jpeg&f=1&nofb=1',
@@ -695,7 +620,6 @@ const main = async () => {
     },
     {
       name: 'Age of Empires IV',
-      id: '76',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgamingdebates.com%2Fwp-content%2Fuploads%2F2020%2F02%2Fage-of-empires-iv-age-of-empires-IV-1-1000x574.png&f=1&nofb=1',
@@ -704,7 +628,6 @@ const main = async () => {
     },
     {
       name: 'The Forest',
-      id: '77',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F2.bp.blogspot.com%2F-zjiOgtBL61g%2FWINzgjmSFOI%2FAAAAAAAAANY%2FSkFn2Znq6o8hmJs_KaViDTjG0XmmoCeTACLcB%2Fs1600%2FThe-Forest-Effigy.jpg&f=1&nofb=1',
@@ -713,7 +636,6 @@ const main = async () => {
     },
     {
       name: 'Phasmophobia',
-      id: '78',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.unocero.com%2F2020%2F10%2Fphasmophobia-que-es-1-1-1200x600.jpg&f=1&nofb=1',
@@ -722,7 +644,6 @@ const main = async () => {
     },
     {
       name: 'Dead by Daylight',
-      id: '79',
       type: 'video game',
       image:
         'https://cdn.cloudflare.steamstatic.com/steam/apps/381210/extras/infograph_steam_new.png?t=1647543411',
@@ -731,7 +652,6 @@ const main = async () => {
     },
     {
       name: 'Cyberpunk 2077',
-      id: '80',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd1lss44hh2trtw.cloudfront.net%2Fassets%2Feditorial%2F2020%2F10%2Fcyberpunk-2077-devs-defend-cutting-content-from-game.jpg&f=1&nofb=1',
@@ -740,7 +660,6 @@ const main = async () => {
     },
     {
       name: 'Valheim',
-      id: '81',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wccftech.com%2Fwp-content%2Fuploads%2F2021%2F02%2Fvalheim_longhouseHD-scaled.jpg&f=1&nofb=1',
@@ -749,7 +668,6 @@ const main = async () => {
     },
     {
       name: 'Young Souls',
-      id: '82',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.rpgsite.net%2Fimages%2Fimages%2F000%2F068%2F979%2Foriginal%2FYoung-Souls_Aug082018_04.png&f=1&nofb=1',
@@ -758,7 +676,6 @@ const main = async () => {
     },
     {
       name: 'The Sims 4',
-      id: '83',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic0.cbrimages.com%2Fwordpress%2Fwp-content%2Fuploads%2F2021%2F02%2Fthe-sims-4-header.jpg&f=1&nofb=1',
@@ -767,7 +684,6 @@ const main = async () => {
     },
     {
       name: 'Zoo Tycoon',
-      id: '84',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.vox-cdn.com%2Fthumbor%2F4Zb4tU3eHUzyUdbYNtWGhj1XWrE%3D%2F0x0%3A1491x945%2F1200x0%2Ffilters%3Afocal(0x0%3A1491x945)%3Ano_upscale()%2Fcdn.vox-cdn.com%2Fuploads%2Fchorus_asset%2Ffile%2F19348725%2F1c4e45c7eef5c02e8604363fcf97c62a.jpg&f=1&nofb=1',
@@ -776,7 +692,6 @@ const main = async () => {
     },
     {
       name: 'Roller Coaster Tycoon',
-      id: '85',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.mmoga.com%2Fimages%2Fscreenshots%2F_p%2F1061986%2F0da3e1aa115682fb7ed5a64f8caa6aed_rollercoaster-tycoon-deluxe.jpg&f=1&nofb=1',
@@ -785,7 +700,6 @@ const main = async () => {
     },
     {
       name: 'Detective Barbie: The Mystery of the Carnival Caper!',
-      id: '86',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.mobygames.com%2Fimages%2Fcovers%2Fl%2F218100-detective-barbie-the-mystery-of-the-carnival-caper-windows-front-cover.jpg&f=1&nofb=1',
@@ -794,7 +708,6 @@ const main = async () => {
     },
     {
       name: 'Lego Island',
-      id: '87',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgamefabrique.com%2Fstorage%2Fscreenshots%2Fpc%2Flego-island-03.png&f=1&nofb=1',
@@ -803,7 +716,6 @@ const main = async () => {
     },
     {
       name: 'Spyro the Dragon',
-      id: '88',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fexternal-preview.redd.it%2F6uyrJruxNgiG1Xz9ZF4ekMT5mEl7I4Nu_Hg4dv9J6R0.jpg%3Fauto%3Dwebp%26s%3De188f16e9cebf1f8ac05fe86a4f2a211c0d68bde&f=1&nofb=1',
@@ -812,7 +724,6 @@ const main = async () => {
     },
     {
       name: 'Crash Bandicoot',
-      id: '89',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.unilad.co.uk%2Fwp-content%2Fuploads%2F2020%2F02%2FCrash-Bandicoot-3.jpg&f=1&nofb=1',
@@ -821,7 +732,6 @@ const main = async () => {
     },
     {
       name: 'Phoenix Wright: Ace Attorney',
-      id: '90',
       type: 'video game',
       image:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flive.staticflickr.com%2F7888%2F47490778442_5834f7c298_o.jpg&f=1&nofb=1',
