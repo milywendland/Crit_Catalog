@@ -4,7 +4,7 @@
 
 ### By: Mily Wendland
 
-#### [Trello](https://trello.com/b/C9n7lt0X/project-2-crit-catalog) [GitHub](https://github.com/milywendland/Project_2_Crit_Catalog)
+#### [Trello](https://trello.com/b/C9n7lt0X/project-2-crit-catalog) [GitHub](https://github.com/milywendland/Crit_Catalog)
 
 ---
 
