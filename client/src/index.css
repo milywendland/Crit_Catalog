@@ -22,7 +22,8 @@ nav {
   display: flex;
   justify-content: space-around;
   background-color: darkslateblue;
-  height: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .bod {
