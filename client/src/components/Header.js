@@ -1,0 +1,27 @@
+import { Link } from 'react-router-dom'
+
+const Header = () => {
+  return (
+    <header>
+      <nav>
+        <div ClassName="nav">
+          <Link to="/">Home</Link>
+        </div>
+        <div className="nav">
+          <Link to="/Games">Games</Link>
+        </div>
+        <div className="nav">
+          <Link to="/CreateList">Make A List</Link>
+        </div>
+        <div className="nav">
+          <Link to="/About">About</Link>
+        </div>
+        <div className="nav">
+          <Link to="/SubmitGame">Submit Game</Link>
+        </div>
+      </nav>
+    </header>
+  )
+}
+
+export default Header
