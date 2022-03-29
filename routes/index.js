@@ -6,4 +6,6 @@ router.get('/', (req, res) => res.send('this is root'))
 
 router.get('/games', controllers.getAllGames)
 
+router.post('/games', controllers.addGame)
+
 module.exports = router
