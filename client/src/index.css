@@ -48,12 +48,26 @@ img {
 
 .card {
   height: 350px;
-  width: 400px;
+  width: 420px;
   background-color: rgb(207, 207, 207);
   color: rgb(19, 20, 20);
   margin: 10px;
   border-radius: 10px;
-  padding-top: 10px;
+  padding-top: 5px;
+}
+
+.card button {
+  background-color: rgb(19, 20, 20);
+  color: whitesmoke;
+  height: 20px;
+  width: 25px;
+  display: flex;
+  border: 1px solid;
+  justify-content: center;
+  margin-top: 0;
+  float: right;
+  margin-right: 5px;
+  margin-bottom: 0;
 }
 
 form {
