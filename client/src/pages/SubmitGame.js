@@ -54,7 +54,7 @@ const SubmitGame = () => {
       axios
         .post(`http://localhost:3001/api/games/${game}`, packagedPayLoad)
         .catch((err) => console.log(err))
-      navigate(`/games/details/${game}`)
+      navigate(`/games`)
     }
   }
 

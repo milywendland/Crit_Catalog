@@ -22,7 +22,7 @@ const CreateList = () => {
   return (
     <div>
       <h2>Create List</h2>
-      <form onSubmit="">
+      <form>
         <label>List Name:</label>
         <input onChange={handleListNameChange} type="text" name="name" />
         <label>Search Games:</label>

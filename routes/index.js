@@ -8,7 +8,9 @@ router.get('/games', controllers.getAllGames)
 
 router.post('/games', controllers.addGame)
 
-router.get('/games/:id', controllers.getGame)
+router.get('/games/details/:id', controllers.getGame)
+
+router.delete('/games/:id', controllers.deleteGame)
 
 // router.post('/list', controllers.createList)
 

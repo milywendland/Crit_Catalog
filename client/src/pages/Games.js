@@ -19,7 +19,7 @@ const Games = () => {
   let navigate = useNavigate()
 
   const showGame = (gameId) => {
-    navigate(`/games/${gameId}`)
+    navigate(`/games/details/${gameId}`)
   }
 
   return (
@@ -34,7 +34,6 @@ const Games = () => {
                 image={game.image}
                 description={game.description}
                 onClick={() => showGame(game._id)}
-                onSubmit=""
               />
             </div>
           ))}

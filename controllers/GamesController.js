@@ -26,7 +26,20 @@ const getGame = async (req, res) => {
     if (game) {
       return res.status(201).json({ game })
     }
-    return res.status(404).send('Game with specific ID does not exist')
+    return res.status(404).send('Game does not exist')
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
+const deleteGame = async (req, res) => {
+  try {
+    const { id } = req.params
+    const deleted = await Game.findByIdAndDelete(id)
+    if (deleted) {
+      return res.status(200).send('game deleted')
+    }
+    throw new Error('game not found')
   } catch (error) {
     return res.status(500).send(error.message)
   }
@@ -35,5 +48,6 @@ const getGame = async (req, res) => {
 module.exports = {
   getAllGames,
   addGame,
-  getGame
+  getGame,
+  deleteGame
 }
