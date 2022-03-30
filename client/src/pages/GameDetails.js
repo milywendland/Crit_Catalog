@@ -18,19 +18,21 @@ const GameDetails = () => {
   }, [])
 
   return (
-    <div className="deets">
-      <section>
-        <div key={game._id}>
-          <GameDeets
-            name={game.name}
-            image={game.image}
-            type={game.type}
-            description={game.description}
-          />
+    <div className="deets-wrapper">
+      <div className="deets">
+        <section>
+          <div key={game._id}>
+            <GameDeets
+              name={game.name}
+              image={game.image}
+              type={game.type}
+              description={game.description}
+            />
+          </div>
+        </section>
+        <div>
+          <button>Add to List</button>
         </div>
-      </section>
-      <div>
-        <button>Add to List</button>
       </div>
     </div>
   )
