@@ -42,7 +42,7 @@ img {
 
 .games-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
 }
 
@@ -54,6 +54,7 @@ img {
   margin: 10px;
   border-radius: 10px;
   padding-top: 5px;
+  margin-bottom: 40px;
 }
 
 .card button {
@@ -70,6 +71,14 @@ img {
   margin-bottom: 0;
 }
 
+.card button:hover {
+  background-color: #f2b705;
+}
+
+.card button::after {
+  background-color: darkslateblue;
+}
+
 form {
   display: flex;
   flex-flow: column;
@@ -83,6 +92,10 @@ form {
 label {
   margin: 15px;
   font-size: 20px;
+}
+
+input {
+  margin-left: 5px;
 }
 
 button {

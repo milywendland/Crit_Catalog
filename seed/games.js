@@ -79,7 +79,7 @@ const main = async () => {
       name: 'Jiangshi',
       type: 'tabletop',
       image:
-        'https://www.gameandacurry.com/wp-content/uploads/2021/05/6-16-20-Book-Cover-Mock-Up-01-600x900-1.png',
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.dicebreaker.com%2Fjiangshi-rpg-art.jpg%2FBROK%2Fresize%2F1920%253E%2Fformat%2Fjpg%2Fquality%2F80%2Fjiangshi-rpg-art.jpg&f=1&nofb=1',
       description:
         'The premise of Jiangshi: Blood in the Banquet Hall is undeniably an interesting one. In the game, the players manage a restaurant business during the day and battle vampiric monsters in the night. '
     },
@@ -334,7 +334,7 @@ const main = async () => {
       name: 'Pokemon Red and Blue',
       type: 'video game',
       image:
-        'https://static.wikia.nocookie.net/nintendo/images/5/59/Pokemon_Red_%28NA%29.png/revision/latest?cb=20120331144754&path-prefix=en',
+        'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Freviewfix.com%2Fwp-content%2Fuploads%2F2016%2F03%2FPokemon-3.jpg&f=1&nofb=1',
       description:
         'Pokémon Red Version and Pokémon Blue Version are reprogrammed versions of Pocket Monsters Red, Green, and Blue. They are the first Pokémon games ever released outside of Japan. In the titles, the player longs to become the greatest Pokémon Trainer by capturing and raising species known as Pokémon. In the games there were 151 Pokémon species that could be caught.'
     },
@@ -342,7 +342,7 @@ const main = async () => {
       name: 'Pokemon Gold and Silver',
       type: 'video game',
       image:
-        'https://static.wikia.nocookie.net/nintendo/images/0/08/Pokemon_Gold_%28NA%29.jpg/revision/latest/scale-to-width-down/350?cb=20111104144754&path-prefix=en',
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.vg247.com%2Fcurrent%2F2017%2F06%2Fpokemon_gold_silver.png&f=1&nofb=1',
       description:
         'Pokémon Gold Version and Pokémon Silver Version are the second installments of the Pokémon series of RPG video games developed by Game Freak and published by Nintendo for the Game Boy Color. The series featured a new region entitled Johto and introduces a century of new Pokémon. '
     },
@@ -350,7 +350,7 @@ const main = async () => {
       name: 'Pokemon Ruby and Sapphire',
       type: 'video game',
       image:
-        'https://static.wikia.nocookie.net/nintendo/images/a/aa/Pokemon_Ruby_%28NA%29.jpg/revision/latest/scale-to-width-down/350?cb=20140822024920&path-prefix=en',
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn02.nintendo-europe.com%2Fmedia%2Fimages%2F10_share_images%2Fgames_15%2Fgame_boy_advance_7%2FSI_GBA_PokemonRuby_enGB.jpg&f=1&nofb=1',
       description:
         'Pokémon Ruby and Pokémon Sapphire are part of the third generation of Pokémon games. t was also the first set of Pokémon games to be released on the Game Boy Advance, and it led to large graphical upgrades from the previous games. 135 brand new Pokémon species can be found in Ruby and Sapphire.'
     },
@@ -358,7 +358,7 @@ const main = async () => {
       name: 'Pokemon Diamond and Pearl',
       type: 'video game',
       image:
-        'https://static.wikia.nocookie.net/nintendo/images/2/20/Pokemon_Diamond_%28NA%29.jpg/revision/latest/scale-to-width-down/350?cb=20210213015750&path-prefix=en',
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette.wikia.nocookie.net%2Fpokemon%2Fimages%2F2%2F22%2FDiamondUS.jpg%2Frevision%2Flatest%3Fcb%3D20110219042350&f=1&nofb=1',
       description:
         'The game takes place in Sinnoh, which is based on the island of Hokkaidō in Japan. The new criminals are Team Galactic. The game features an updated day/night system, as well as Pokémon Contests, the Battle Tower, a Pokétch device, and Wi-Fi abilities.'
     },
@@ -366,7 +366,7 @@ const main = async () => {
       name: 'Pokemon Black and White',
       type: 'video game',
       image:
-        'https://static.wikia.nocookie.net/nintendo/images/8/8d/Pokemon_Black_%28NA%29.png/revision/latest/scale-to-width-down/350?cb=20120927155809&path-prefix=en',
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.justpushstart.com%2Fwp-content%2Fuploads%2F2011%2F03%2Fbvwv_1.jpg&f=1&nofb=1',
       description:
         'The games contain very few connections to the previous Pokémon titles, featuring 156 new Pokémon, brand new characters, and new gameplay mechanics. During the duration of the main game, none of the 493 Pokémon from the first four generations appear. Black and White are the first Pokémon games since Pokémon Red and Blue to use a color in the name instead of an element or precious gemstone.'
     },
@@ -374,7 +374,7 @@ const main = async () => {
       name: 'Pokemon X and Y',
       type: 'video game',
       image:
-        'https://static.wikia.nocookie.net/nintendo/images/7/75/Pok%C3%A9mon_X_%28NA%29.png/revision/latest/scale-to-width-down/350?cb=20131102210731&path-prefix=en',
+        'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.nintendolife.com%2Fnews%2F2013%2F05%2Ffresh_pokemon_x_and_y_details_emerge_cover_art_and_new_pokemon_confirmed%2Fattachment%2F6%2F900x.jpg&f=1&nofb=1',
       description:
         'Pokémon X and Pokémon Y are both RPG games released for the Nintendo 3DS as the first installment in the sixth generation of the Pokémon series. The games were released worldwide (except for a few countries) on October 12, 2013, making them the first Nintendo-published retail games to have a simultaneous global release in all key regions. It takes place in the Kalos region.'
     },
@@ -382,7 +382,7 @@ const main = async () => {
       name: 'Pokemon Sun and Moon',
       type: 'video game',
       image:
-        'https://static.wikia.nocookie.net/nintendo/images/a/a2/Pokemon_Moon_%28NA%29.png/revision/latest/scale-to-width-down/350?cb=20170117055107&path-prefix=en',
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp1878307.png&f=1&nofb=1',
       description:
         'Pokémon Sun and Pokémon Moon are the first games of the seventh generation of the Pokémon series, releasing on the Nintendo 3DS. The game takes place in the Alola region. It was announced in a Nintendo Direct on the 20th anniversary of the original Pokémon Red and Green.'
     },
@@ -390,7 +390,7 @@ const main = async () => {
       name: 'Pokemon Sword and Sheild',
       type: 'video game',
       image:
-        'https://static.wikia.nocookie.net/nintendo/images/3/3c/Pok%C3%A9mon_Sword_US_boxart.png/revision/latest/scale-to-width-down/309?cb=20190607105234&path-prefix=en',
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.images.dailystar.co.uk%2Fdynamic%2F184%2Fphotos%2F898000%2F936x622%2F1651898.jpg&f=1&nofb=1',
       description:
         'Pokémon Sword and Pokémon Shield are both role-playing games released on the Nintendo Switch as the first installments of the eighth generation of Pokémon games. The games take place in the Galar region. The major new feature is Dynamax, where players can cause their Pokémon to grow to massive sizes and become more powerful. dynamax Pokemon are bigger in size and there defence increase but there speed decrease due to there size .'
     },
@@ -398,7 +398,7 @@ const main = async () => {
       name: 'Pokemon Legends: Arceus',
       type: 'video game',
       image:
-        'https://static.wikia.nocookie.net/nintendo/images/9/9c/Pokemon_Legends_Arceus_cover.jpg/revision/latest/scale-to-width-down/246?cb=20220127004029&path-prefix=en',
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd2ofqe7l47306o.cloudfront.net%2Fgames%2F1920x1080%2Fpokemon-legends-arceus-03.jpg&f=1&nofb=1',
       description:
         'Pokémon Legends: Arceus is a game in the Pokémon series, released on January 28, 2022. The game is set in Sinnoh, many years before the events of Pokémon Diamond and Pearl. The game is open-world, with the player capturing and battling different types of Pokémon. In the game, the starters are Rowlet, Cyndaquil, and Oshawott, who were starters in previous games (Sun/Moon, Gold/Silver, and Black/White, respectively). The game was first announced in a Pokémon Presents presentation, along with Pokémon Brilliant Diamond and Shining Pearl.'
     },
@@ -494,7 +494,7 @@ const main = async () => {
       name: 'The Legend of Zelda: Breath of the Wild',
       type: 'video game',
       image:
-        'https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg/220px-The_Legend_of_Zelda_Breath_of_the_Wild.jpg',
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2386758.jpg&f=1&nofb=1',
       description:
         'The Legend of Zelda: Breath of the Wild is a 2017 action-adventure game developed and published by Nintendo for the Nintendo Switch and Wii U consoles. Breath of the Wild is an installment of The Legend of Zelda franchise and is set at the end of the Zelda timeline. The player controls Link, who awakens from a hundred-year slumber to defeat Calamity Ganon and restore the kingdom of Hyrule.'
     },
@@ -646,7 +646,7 @@ const main = async () => {
       name: 'Dead by Daylight',
       type: 'video game',
       image:
-        'https://cdn.cloudflare.steamstatic.com/steam/apps/381210/extras/infograph_steam_new.png?t=1647543411',
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FmDijU86Nms8%2Fmaxresdefault.jpg&f=1&nofb=1',
       description:
         'Dead by Daylight is a multiplayer (4vs1) horror game where one player takes on the role of the savage Killer, and the other four players play as Survivors, trying to escape the Killer and avoid being caught, tortured and killed.'
     },
