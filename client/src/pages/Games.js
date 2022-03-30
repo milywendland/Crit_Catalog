@@ -34,6 +34,7 @@ const Games = () => {
                 image={game.image}
                 description={game.description}
                 onClick={() => showGame(game._id)}
+                onSubmit=""
               />
             </div>
           ))}

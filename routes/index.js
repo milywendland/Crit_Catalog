@@ -10,4 +10,10 @@ router.post('/games', controllers.addGame)
 
 router.get('/games/:id', controllers.getGame)
 
+// router.post('/list', controllers.createList)
+
+// router.put('list/update/:name', controllers.updateList)
+
+// router.delete('/list/:name', controllers.deleteList)
+
 module.exports = router
