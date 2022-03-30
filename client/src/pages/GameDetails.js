@@ -1,14 +1,16 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import GameDeets from '../components/GameDeets'
+import { useParams } from 'react-router-dom'
 
 const GameDetails = () => {
+  const { id } = useParams()
   const [game, setGame] = useState('')
 
   useEffect(() => {
     const getGame = async () => {
       const response = await axios.get(
-        `http://localhost:3001/api/games/${game._id}`
+        `http://localhost:3001/api/games/details/${id}`
       )
       setGame(response.data.game)
     }

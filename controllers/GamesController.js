@@ -24,7 +24,7 @@ const getGame = async (req, res) => {
     const { id } = req.params
     const game = await Game.findById(id)
     if (game) {
-      return res.status(201).json({ game })
+      return res.status(200).json({ game })
     }
     return res.status(404).send('Game does not exist')
   } catch (error) {
