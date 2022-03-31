@@ -2,9 +2,12 @@ import GameCard from '../components/GameCard'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 const Games = () => {
   const [games, setGames] = useState([])
+  const { id } = useParams()
+
   useEffect(() => {
     document.title = 'Crit Catalog'
   })
@@ -22,6 +25,11 @@ const Games = () => {
     navigate(`/games/details/${gameId}`)
   }
 
+  const deleteGame = async (e) => {
+    e.preventDefault()
+    await axios.delete(`http://localhost:3001/api/games/${id}`)
+  }
+
   return (
     <div className="bod">
       <h2>Crit Catalog</h2>
@@ -30,6 +38,7 @@ const Games = () => {
           {games.map((game) => (
             <div key={game._id}>
               <GameCard
+                onClick={() => deleteGame(game._id)}
                 name={game.name}
                 image={game.image}
                 description={game.description}

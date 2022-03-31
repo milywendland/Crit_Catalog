@@ -2,6 +2,7 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 import GameDeets from '../components/GameDeets'
 import { useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const GameDetails = () => {
   const { id } = useParams()
@@ -17,6 +18,16 @@ const GameDetails = () => {
     getGame()
   }, [])
 
+  let navigate = useNavigate()
+  const addToList = () => {
+    navigate(`/games/lists/:id`)
+  }
+
+  const deleteGame = async (e) => {
+    await axios.delete(`http://localhost:3001/api/games/details/${id}`)
+    navigate('/')
+  }
+
   return (
     <div className="deets-wrapper">
       <div className="deets">
@@ -28,10 +39,17 @@ const GameDetails = () => {
               type={game.type}
               description={game.description}
             />
+            <button
+              onClick={() => {
+                deleteGame(game._id)
+              }}
+            >
+              Delete Game
+            </button>
           </div>
         </section>
         <div>
-          <button>Add to List</button>
+          <button onClick={() => addToList()}>Add to List</button>
         </div>
       </div>
     </div>

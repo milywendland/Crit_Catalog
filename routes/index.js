@@ -10,10 +10,8 @@ router.post('/games', controllers.addGame)
 
 router.get('/games/details/:id', controllers.getGame)
 
-router.delete('/games/:id', controllers.deleteGame)
+router.delete('/games/details/:id', controllers.deleteGame)
 
-// router.put('list/add/:id', controllers.addToList)
-
-// router.delete('/list/:name', controllers.deleteList)
+router.post('/games/lists', controllers.addToList)
 
 module.exports = router

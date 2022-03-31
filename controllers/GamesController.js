@@ -45,12 +45,6 @@ const deleteGame = async (req, res) => {
   }
 }
 
-// const createList = async (req, res) =>{
-//   try{
-//   const list = await new List
-// }
-// }
-
 const addToList = async (req, res) => {
   try {
     const { id } = req.params
@@ -64,25 +58,10 @@ const addToList = async (req, res) => {
   }
 }
 
-const searchGames = async (req, res) => {
-  try {
-    let name = req.params.name
-    const found = await Game.find(name)
-    if (found) {
-      return res.status(200).json({ game })
-    }
-    throw new Error('game not found')
-  } catch (error) {
-    return res.status(500).send(error.message)
-  }
-}
-
 module.exports = {
   getAllGames,
   addGame,
   getGame,
   deleteGame,
-  // createList,
-  addToList,
-  searchGames
+  addToList
 }

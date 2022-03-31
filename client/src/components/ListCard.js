@@ -1,8 +1,8 @@
 const ListCard = (props) => {
   return (
     <div className="list">
-      <h3>{props.name}</h3>
-      <li>{props.game}</li>
+      <h4>{props.name}</h4>
+      <img src={props.image} alt={props.name} />
     </div>
   )
 }
