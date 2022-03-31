@@ -20,10 +20,11 @@ const GameDetails = () => {
 
   let navigate = useNavigate()
   const addToList = () => {
-    navigate(`/games/lists/:id`)
+    axios.put(`http://localhost:3001/api/games/list/${id}`)
+    navigate(`/List`)
   }
 
-  const deleteGame = async (e) => {
+  const deleteGame = async () => {
     await axios.delete(`http://localhost:3001/api/games/details/${id}`)
     navigate('/')
   }
@@ -31,7 +32,7 @@ const GameDetails = () => {
   return (
     <div className="deets-wrapper">
       <div className="deets">
-        <section>
+        <section className="detailsection">
           <div key={game._id}>
             <GameDeets
               name={game.name}
@@ -39,16 +40,16 @@ const GameDetails = () => {
               type={game.type}
               description={game.description}
             />
-            <button
-              onClick={() => {
-                deleteGame(game._id)
-              }}
-            >
-              Delete Game
-            </button>
           </div>
         </section>
-        <div>
+        <div className="buttons">
+          <button
+            onClick={() => {
+              deleteGame(game._id)
+            }}
+          >
+            Delete Game
+          </button>
           <button onClick={() => addToList()}>Add to List</button>
         </div>
       </div>

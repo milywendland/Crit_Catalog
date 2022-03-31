@@ -22,6 +22,7 @@ nav {
   display: flex;
   justify-content: space-around;
   background-color: darkslateblue;
+  background-size: 100vw;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -128,11 +129,11 @@ p a {
 }
 
 .deets {
-  height: 550px;
+  height: 540px;
   width: 600px;
   background-color: rgb(207, 207, 207);
   color: rgb(19, 20, 20);
-  margin: 10px;
+  margin-top: 20px;
   border-radius: 10px;
   padding-top: 5px;
   margin-bottom: 40px;
@@ -147,22 +148,13 @@ p a {
   height: 300px;
 }
 
-.listform {
-  margin: 5% 35%;
+.buttons {
+  width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
-.lists {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  border: 3px solid darkslateblue;
-  border-radius: 10px;
-  color: whitesmoke;
-  margin: 5% 35%;
-}
-
-.deets button {
-  float: left;
-  margin-left: 115px;
-  margin-top: 30px;
+.buttons button {
+  margin-top: 0;
 }
