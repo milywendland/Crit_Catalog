@@ -142,3 +142,17 @@ p a {
   color: rgb(19, 20, 20);
   padding: 0 20px;
 }
+
+.listform {
+  margin: 5% 35%;
+}
+
+.lists {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border: 3px solid darkslateblue;
+  border-radius: 10px;
+  color: whitesmoke;
+  margin: 5% 35%;
+}

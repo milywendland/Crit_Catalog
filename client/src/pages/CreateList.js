@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const CreateList = () => {
   const [listName, setListName] = useState('')
@@ -14,21 +14,29 @@ const CreateList = () => {
     setGameName(e.target.value)
   }
 
-  // const handleOnSubmit = (e) => {
-  //   e.preventDefafult()
-  //   document.body = `${gameName}`
-  // }
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log('clicky!')
+  }
 
   return (
     <div>
-      <h2>Create List</h2>
-      <form>
+      <h2>Make a List</h2>
+      <form className="listform">
         <label>List Name:</label>
         <input onChange={handleListNameChange} type="text" name="name" />
         <label>Search Games:</label>
         <input onChange={handleSearchChange} type="search" />
-        <button type="submit">Make List</button>
+        <button type="submit" onSubmit={handleSubmit}>
+          Make List
+        </button>
       </form>
+      <div className="lists">
+        <div className="list-card">
+          <h3>{listName}</h3>
+          <p>{gameName}</p>
+        </div>
+      </div>
     </div>
   )
 }

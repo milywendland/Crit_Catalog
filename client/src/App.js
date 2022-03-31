@@ -5,6 +5,7 @@ import About from './pages/About'
 import CreateList from './pages/CreateList'
 import SubmitGame from './pages/SubmitGame'
 import GameDetails from './pages/GameDetails'
+import AddListItem from './pages/AddListItem'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/CreateList" element={<CreateList />} />
           <Route path="/SubmitGame" element={<SubmitGame />} />
+          {/* <Route path="/list/add/:id" element={<AddListItem />} /> */}
         </Routes>
       </main>
     </div>

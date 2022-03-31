@@ -45,9 +45,44 @@ const deleteGame = async (req, res) => {
   }
 }
 
+// const createList = async (req, res) =>{
+//   try{
+//   const list = await new List
+// }
+// }
+
+const addToList = async (req, res) => {
+  try {
+    const { id } = req.params
+    const added = await Game.findByIdAndUpdate(id)
+    if (added) {
+      return res.status(201).json({ game })
+    }
+    throw new Error('game not found')
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
+const searchGames = async (req, res) => {
+  try {
+    let name = req.params.name
+    const found = await Game.find(name)
+    if (found) {
+      return res.status(200).json({ game })
+    }
+    throw new Error('game not found')
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 module.exports = {
   getAllGames,
   addGame,
   getGame,
-  deleteGame
+  deleteGame,
+  // createList,
+  addToList,
+  searchGames
 }

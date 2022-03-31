@@ -14,7 +14,7 @@ router.delete('/games/:id', controllers.deleteGame)
 
 // router.post('/list', controllers.createList)
 
-// router.put('list/update/:name', controllers.updateList)
+// router.put('list/add/:id', controllers.addToList)
 
 // router.delete('/list/:name', controllers.deleteList)
 
