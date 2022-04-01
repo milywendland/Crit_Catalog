@@ -1,4 +1,4 @@
-const { Game } = require('../models/index')
+const { Game, List } = require('../models/index')
 
 const getAllGames = async (req, res) => {
   try {
@@ -48,7 +48,7 @@ const deleteGame = async (req, res) => {
 const editGame = async (req, res) => {
   try {
     const { id } = req.params
-    await Game.findByIdAndUpdate(id, req.body, { new: true }, (err, game) => {
+    await Game.findByIdAndUpdate(id, req.body, (err, game) => {
       if (err) {
         res.status(500).send(err)
       }
@@ -62,10 +62,22 @@ const editGame = async (req, res) => {
   }
 }
 
+const addToList = async (req, res) => {
+  try {
+    const list = await new List(req.body)
+    await list.game.push(Game.id)
+    list.save()
+    return res.status(201).json({ list })
+  } catch (error) {
+    return res.status(500).json({ error: error.message })
+  }
+}
+
 module.exports = {
   getAllGames,
   addGame,
   getGame,
   deleteGame,
-  editGame
+  editGame,
+  addToList
 }

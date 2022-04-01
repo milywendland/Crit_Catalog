@@ -6,11 +6,23 @@ import { useNavigate } from 'react-router-dom'
 const EditGame = () => {
   const [description, setDescription] = useState('')
   const [image, setImage] = useState('')
+  const [game, setGame] = useState('')
+
   const { id } = useParams()
 
   useEffect(() => {
     document.title = 'Edit Game'
   })
+
+  useEffect(() => {
+    const getGame = async () => {
+      const response = await axios.get(
+        `http://localhost:3001/api/games/details/${id}`
+      )
+      setGame(response.data.game)
+    }
+    getGame()
+  }, [])
 
   const handleImageChange = (e) => {
     e.preventDefafult()
@@ -22,8 +34,12 @@ const EditGame = () => {
     setDescription(e.target.value)
   }
 
-  const editGame = async () => {
+  let navigate = useNavigate()
+
+  const editGame = async (e) => {
+    e.preventDefafult()
     await axios.put(`http://localhost:3001/api/games/details/${id}/edit`)
+    navigate(`/games/details/${id}`)
   }
 
   return (
@@ -40,7 +56,13 @@ const EditGame = () => {
           name="description"
         />
       </label>
-      <button onClick={editGame()}>Edit Game</button>
+      <button
+        onClick={() => {
+          editGame(game._id)
+        }}
+      >
+        Edit Game
+      </button>
     </form>
   )
 }

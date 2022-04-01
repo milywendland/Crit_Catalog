@@ -25,6 +25,11 @@ const GameDetails = () => {
     navigate('/')
   }
 
+  const addToList = async () => {
+    await axios.post(`http://localhost:3001/api/games/lists/${id}`)
+    navigate('/games/lists')
+  }
+
   return (
     <div className="deets-wrapper">
       <div className="deets">
@@ -52,6 +57,13 @@ const GameDetails = () => {
             }}
           >
             Edit Game
+          </button>
+          <button
+            onClick={() => {
+              addToList(game._id)
+            }}
+          >
+            Add to List
           </button>
         </div>
       </div>
