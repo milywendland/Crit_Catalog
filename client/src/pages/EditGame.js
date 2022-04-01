@@ -39,7 +39,6 @@ const EditGame = () => {
   const editGame = async (e) => {
     e.preventDefault()
     await axios.put(`http://localhost:3001/api/games/details/${id}/edit`)
-    navigate(`/games/details/${id}`)
   }
 
   return (
@@ -60,7 +59,9 @@ const EditGame = () => {
           name="description"
         />
       </label>
-      <button type="submit">Edit Game</button>
+      <button type="submit" onClick={() => navigate(`/games/details/${id}`)}>
+        Edit Game
+      </button>
     </form>
   )
 }
