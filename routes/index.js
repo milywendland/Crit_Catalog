@@ -12,6 +12,6 @@ router.get('/games/details/:id', controllers.getGame)
 
 router.delete('/games/details/:id', controllers.deleteGame)
 
-router.put('/games/lists/:id', controllers.addToList)
+router.put('/games/details/:id/edit', controllers.editGame)
 
 module.exports = router

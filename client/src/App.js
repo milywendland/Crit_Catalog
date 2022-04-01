@@ -4,7 +4,7 @@ import Games from './pages/Games'
 import About from './pages/About'
 import SubmitGame from './pages/SubmitGame'
 import GameDetails from './pages/GameDetails'
-import List from './pages/List'
+import EditGame from './pages/EditGame'
 
 function App() {
   return (
@@ -16,8 +16,7 @@ function App() {
           <Route path="/games/details/:id" element={<GameDetails />} />
           <Route path="/About" element={<About />} />
           <Route path="/SubmitGame" element={<SubmitGame />} />
-          {/* <Route path="/list/add/:id" element={<AddListItem />} /> */}
-          <Route path="/Lists" element={<List />} />
+          <Route path="/games/details/:id/edit" element={<EditGame />} />
         </Routes>
       </main>
     </div>

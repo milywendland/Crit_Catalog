@@ -45,14 +45,18 @@ const deleteGame = async (req, res) => {
   }
 }
 
-const addToList = async (req, res) => {
+const editGame = async (req, res) => {
   try {
     const { id } = req.params
-    const added = await Game.findByIdAndUpdate(id)
-    if (added) {
-      return res.status(201).json({ game })
-    }
-    throw new Error('game not found')
+    await Game.findByIdAndUpdate(id, req.body, { new: true }, (err, game) => {
+      if (err) {
+        res.status(500).send(err)
+      }
+      if (!game) {
+        res.status(500).send('Game not found')
+      }
+      return res.status(200).json({ game })
+    })
   } catch (error) {
     return res.status(500).send(error.message)
   }
@@ -63,5 +67,5 @@ module.exports = {
   addGame,
   getGame,
   deleteGame,
-  addToList
+  editGame
 }

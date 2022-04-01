@@ -19,10 +19,6 @@ const GameDetails = () => {
   }, [])
 
   let navigate = useNavigate()
-  const addToList = () => {
-    axios.put(`http://localhost:3001/api/games/list/${id}`)
-    navigate(`/List`)
-  }
 
   const deleteGame = async () => {
     await axios.delete(`http://localhost:3001/api/games/details/${id}`)
@@ -50,7 +46,13 @@ const GameDetails = () => {
           >
             Delete Game
           </button>
-          <button onClick={() => addToList()}>Add to List</button>
+          <button
+            onClick={() => {
+              navigate('/games/details/:id/edit')
+            }}
+          >
+            Edit Game
+          </button>
         </div>
       </div>
     </div>

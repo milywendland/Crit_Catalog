@@ -25,11 +25,6 @@ const Games = () => {
     navigate(`/games/details/${gameId}`)
   }
 
-  const deleteGame = async (e) => {
-    e.preventDefault()
-    await axios.delete(`http://localhost:3001/api/games/${id}`)
-  }
-
   return (
     <div className="bod">
       <h2>Crit Catalog</h2>
@@ -38,7 +33,6 @@ const Games = () => {
           {games.map((game) => (
             <div key={game._id}>
               <GameCard
-                onClick={() => deleteGame(game._id)}
                 name={game.name}
                 image={game.image}
                 description={game.description}
