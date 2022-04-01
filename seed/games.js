@@ -1,5 +1,5 @@
 const db = require('../db')
-const { Game, List } = require('../models')
+const { Game } = require('../models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 const main = async () => {
@@ -739,12 +739,13 @@ const main = async () => {
         "Phoenix Wright: Ace Attorney is a visual novel adventure video game developed by Capcom. It was originally released for the Game Boy Advance in 2001 in Japan, and has since been ported to multiple platforms. The story follows Phoenix Wright, a rookie defense attorney who attempts to get his clients declared 'not guilty'. Among other characters are Phoenix's boss, Mia Fey; his assistant and Mia's sister, Maya; and prosecutor Miles Edgeworth. The player controls Phoenix through two types of sections: investigations and courtroom trials."
     }
   ]
-
   await Game.insertMany(games)
+
   console.log('Created Games!')
 }
 
 const run = async () => {
+  await db.dropDatabase()
   await main()
   db.close()
 }

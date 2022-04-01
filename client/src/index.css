@@ -158,3 +158,24 @@ p a {
 .buttons button {
   margin-top: 0;
 }
+
+.list-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.list-card {
+  background-color: rgb(207, 207, 207);
+  width: 350px;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding-top: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  color: rgb(19, 20, 20);
+}
+
+.list-card li {
+  padding-bottom: 10px;
+}

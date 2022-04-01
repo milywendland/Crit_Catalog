@@ -26,7 +26,7 @@ const GameDetails = () => {
   }
 
   const addToList = async () => {
-    await axios.post(`http://localhost:3001/api/games/lists/${id}`)
+    await axios.post(`http://localhost:3001/api/games/lists`)
     navigate('/games/lists')
   }
 

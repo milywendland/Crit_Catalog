@@ -3,7 +3,8 @@ const Schema = mongoose.Schema
 
 const List = new Schema(
   {
-    game: [{ type: Schema.Types.ObjectId, ref: 'Game' }]
+    name: { type: String, required: true },
+    games: [{ type: Schema.Types.ObjectId, ref: 'games' }]
   },
   { timestamps: true }
 )
