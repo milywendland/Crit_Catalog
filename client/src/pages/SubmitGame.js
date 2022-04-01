@@ -24,18 +24,18 @@ const SubmitGame = () => {
   }
 
   const handleImageChange = (e) => {
-    e.preventDefafult()
+    e.preventDefault()
     setImage(e.target.value)
   }
 
   const handleDescriptionChange = (e) => {
-    e.preventDefafult()
+    e.preventDefault()
     setDescription(e.target.value)
   }
 
   const handleTypeChange = (e) => {
     if (e.target.value == 'video game' || e.target.value == 'tabletop') {
-      e.preventDefafult()
+      e.preventDefault()
       setType(e.target.value)
     }
   }
@@ -50,11 +50,11 @@ const SubmitGame = () => {
         image: image,
         description: description
       }
-      e.preventDefafult()
+      e.preventDefault()
       axios
-        .post(`http://localhost:3001/api/games/${game}`, packagedPayLoad)
+        .post(`http://localhost:3001/api/games`, packagedPayLoad)
         .catch((err) => console.log(err))
-      navigate(`/games`)
+      navigate(`/`)
     }
   }
 
