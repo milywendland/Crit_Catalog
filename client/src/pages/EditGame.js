@@ -25,7 +25,7 @@ const EditGame = () => {
   }, [])
 
   const handleImageChange = (e) => {
-    e.preventDefafult()
+    e.preventDefault()
     setImage(e.target.value)
   }
 
@@ -38,7 +38,7 @@ const EditGame = () => {
 
   const editGame = async (e) => {
     e.preventDefault()
-    axios.put(`http://localhost:3001/api/games/details/${id}/edit`)
+    await axios.put(`http://localhost:3001/api/games/details/${id}/edit`)
     navigate(`/games/details/${id}`)
   }
 

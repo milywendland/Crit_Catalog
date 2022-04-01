@@ -65,7 +65,7 @@ const editGame = async (req, res) => {
 const addToList = async (req, res) => {
   try {
     const { id } = req.params
-    await List.findByIdAndUpdate(id, req.body, (err, list) => {
+    await List.findByIdAndUpdate(id, req.body, { new: true }, (err, list) => {
       if (err) {
         res.status(500).send(err)
       }
