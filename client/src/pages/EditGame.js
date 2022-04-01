@@ -43,7 +43,11 @@ const EditGame = () => {
   }
 
   return (
-    <form>
+    <form
+      onSubmit={() => {
+        editGame()
+      }}
+    >
       <label>
         Image Url:
         <input onChange={handleImageChange} type="text" name="image" />
@@ -56,13 +60,7 @@ const EditGame = () => {
           name="description"
         />
       </label>
-      <button
-        onClick={() => {
-          editGame(game._id)
-        }}
-      >
-        Edit Game
-      </button>
+      <button type="submit">Edit Game</button>
     </form>
   )
 }
