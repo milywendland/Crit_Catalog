@@ -30,15 +30,15 @@ const EditGame = () => {
   }
 
   const handleDescriptionChange = (e) => {
-    e.preventDefafult()
+    e.preventDefault()
     setDescription(e.target.value)
   }
 
   let navigate = useNavigate()
 
   const editGame = async (e) => {
-    e.preventDefafult()
-    await axios.put(`http://localhost:3001/api/games/details/${id}/edit`)
+    e.preventDefault()
+    axios.put(`http://localhost:3001/api/games/details/${id}/edit`)
     navigate(`/games/details/${id}`)
   }
 
