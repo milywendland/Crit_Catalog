@@ -48,7 +48,7 @@ const deleteGame = async (req, res) => {
 const editGame = async (req, res) => {
   try {
     const { id } = req.params
-    await Game.findByIdAndUpdate(id, req.body, (err, game) => {
+    await Game.findByIdAndUpdate(id, req.body, { new: true }, (err, game) => {
       if (err) {
         res.status(500).send(err)
       }

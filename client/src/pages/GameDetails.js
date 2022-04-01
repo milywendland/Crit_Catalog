@@ -53,7 +53,7 @@ const GameDetails = () => {
           </button>
           <button
             onClick={() => {
-              navigate('/games/details/:id/edit')
+              navigate(`/games/details/${id}/edit`)
             }}
           >
             Edit Game
