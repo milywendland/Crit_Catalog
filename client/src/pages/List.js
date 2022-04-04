@@ -9,7 +9,6 @@ const List = () => {
     const getList = async () => {
       const response = await axios.get(`http://localhost:3001/api/games/lists`)
       setLists(response.data.list)
-      console.log(response.data.list)
     }
     getList()
   }, [])

@@ -52,6 +52,21 @@ const editGame = async (req, res) => {
   )
 }
 
+const addToList = async (req, res) => {
+  const { id } = req.params
+  List.findByIdAndUpdate(id, req.body, { new: true }, (error, list) => {
+    if (error) {
+      res.status(500).send(error)
+      return
+    }
+    if (!list) {
+      res.status(500).send('oops! no list found.')
+      return
+    }
+    return res.status(200).json({ list })
+  })
+}
+
 const getList = async (req, res) => {
   try {
     const list = await List.find().populate('games')
@@ -82,6 +97,7 @@ module.exports = {
   addGame,
   getGame,
   editGame,
+  addToList,
   getList,
   deleteGame
 }

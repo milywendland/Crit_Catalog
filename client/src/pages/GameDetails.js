@@ -53,7 +53,13 @@ const GameDetails = () => {
           >
             Edit Game
           </button>
-          <button>Add to List</button>
+          <button
+            onClick={() => {
+              navigate(`/games/lists/${id}/add`)
+            }}
+          >
+            Add to List
+          </button>
         </div>
       </div>
     </div>
