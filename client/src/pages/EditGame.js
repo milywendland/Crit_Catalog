@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom'
 const EditGame = () => {
   const [description, setDescription] = useState('')
   const [image, setImage] = useState('')
-  const [game, setGame] = useState('')
 
   const { id } = useParams()
 
@@ -14,15 +13,7 @@ const EditGame = () => {
     document.title = 'Edit Game'
   })
 
-  useEffect(() => {
-    const getGame = async () => {
-      const response = await axios.get(
-        `http://localhost:3001/api/games/details/${id}`
-      )
-      setGame(response.data.game)
-    }
-    getGame()
-  }, [])
+  let navigate = useNavigate()
 
   const handleImageChange = (e) => {
     e.preventDefault()
@@ -34,35 +25,34 @@ const EditGame = () => {
     setDescription(e.target.value)
   }
 
-  let navigate = useNavigate()
-
-  const editGame = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
-    await axios.put(`http://localhost:3001/api/games/details/${id}/edit`)
+    if (description !== '' && image !== '') {
+      axios
+        .put(`http://localhost:3001/api/games/details/${id}/edit`)
+        .catch((err) => console.log(err))
+      navigate(`/games/details/${id}`)
+    }
   }
 
   return (
-    <form
-      onSubmit={() => {
-        editGame()
-      }}
-    >
-      <label>
-        Image Url:
-        <input onChange={handleImageChange} type="text" name="image" />
-      </label>
-      <label>
-        Description:
-        <input
-          onChange={handleDescriptionChange}
-          type="text"
-          name="description"
-        />
-      </label>
-      <button type="submit" onClick={() => navigate(`/games/details/${id}`)}>
-        Edit Game
-      </button>
-    </form>
+    <div>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Image Url:
+          <input onChange={handleImageChange} type="text" name="image" />
+        </label>
+        <label>
+          Description:
+          <input
+            onChange={handleDescriptionChange}
+            type="text"
+            name="description"
+          />
+        </label>
+        <button>Edit Game</button>
+      </form>
+    </div>
   )
 }
 

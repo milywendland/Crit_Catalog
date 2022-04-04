@@ -1,3 +1,4 @@
+const res = require('express/lib/response')
 const { Game, List } = require('../models/index')
 
 const getAllGames = async (req, res) => {
@@ -32,51 +33,23 @@ const getGame = async (req, res) => {
   }
 }
 
-const deleteGame = async (req, res) => {
-  try {
-    const { id } = req.params
-    const deleted = await Game.findByIdAndDelete(id)
-    if (deleted) {
-      return res.status(200).send('game deleted')
-    }
-    throw new Error('game not found')
-  } catch (error) {
-    return res.status(500).send(error.message)
-  }
-}
-
 const editGame = async (req, res) => {
-  try {
-    const { id } = req.params
-    await Game.findByIdAndUpdate(id, req.body, { new: true }, (err, game) => {
-      if (err) {
-        res.status(500).send(err)
+  const { id } = req.params
+  const { image, description } = req.body
+  Game.findByIdAndUpdate(
+    id,
+    { image, description },
+    { new: true },
+    (error, game) => {
+      if (error) {
+        res.status(500).send(error)
       }
       if (!game) {
-        res.status(500).send('Game not found')
+        res.status(500).send('oops! no game found.')
       }
       return res.status(200).json({ game })
-    })
-  } catch (error) {
-    return res.status(500).send(error.message)
-  }
-}
-
-const addToList = async (req, res) => {
-  try {
-    const { id } = req.params
-    await List.findByIdAndUpdate(id, req.body, { new: true }, (err, list) => {
-      if (err) {
-        res.status(500).send(err)
-      }
-      if (!list) {
-        res.status(500).send('list not found')
-      }
-      return res.status(200).json({ list })
-    })
-  } catch (error) {
-    return res.status(500).send(error.message)
-  }
+    }
+  )
 }
 
 const getList = async (req, res) => {
@@ -91,12 +64,24 @@ const getList = async (req, res) => {
   }
 }
 
+const deleteGame = async (req, res) => {
+  try {
+    const { id } = req.params
+    const deleted = await Game.findByIdAndDelete(id)
+    if (deleted) {
+      return res.status(200).send('game deleted')
+    }
+    throw new Error('game not found')
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 module.exports = {
   getAllGames,
   addGame,
   getGame,
-  deleteGame,
   editGame,
-  addToList,
-  getList
+  getList,
+  deleteGame
 }

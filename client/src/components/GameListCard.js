@@ -1,6 +1,6 @@
 const GameListCard = (props) => {
   return (
-    <div className="list-card">
+    <div className="list-card" key={props._id}>
       <h3>{props.name}:</h3>
       {props.games.map((game) => (
         <li>

@@ -1,7 +1,6 @@
 import GameListCard from '../components/GameListCard'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import { useParams } from 'react-router-dom'
 
 const List = () => {
   const [lists, setLists] = useState([])
@@ -10,6 +9,7 @@ const List = () => {
     const getList = async () => {
       const response = await axios.get(`http://localhost:3001/api/games/lists`)
       setLists(response.data.list)
+      console.log(response.data.list)
     }
     getList()
   }, [])
