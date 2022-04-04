@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const EditGame = () => {
@@ -8,10 +8,6 @@ const EditGame = () => {
   const [image, setImage] = useState('')
 
   const { id } = useParams()
-
-  useEffect(() => {
-    document.title = 'Edit Game'
-  })
 
   let navigate = useNavigate()
 
@@ -37,6 +33,7 @@ const EditGame = () => {
 
   return (
     <div>
+      <h2>Edit Game</h2>
       <form onSubmit={handleSubmit}>
         <label>
           Image Url:
