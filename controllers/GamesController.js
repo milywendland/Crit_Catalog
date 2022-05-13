@@ -35,21 +35,15 @@ const getGame = async (req, res) => {
 
 const editGame = async (req, res) => {
   const { id } = req.params
-  const { image, description } = req.body
-  Game.findByIdAndUpdate(
-    id,
-    { image, description },
-    { new: true },
-    (error, game) => {
-      if (error) {
-        res.status(500).send(error)
-      }
-      if (!game) {
-        res.status(500).send('oops! no game found.')
-      }
-      return res.status(200).json({ game })
+  Game.findByIdAndUpdate(id, req.body, { new: true }, (error, game) => {
+    if (error) {
+      res.status(500).send(error)
     }
-  )
+    if (!game) {
+      res.status(500).send('oops! no game found.')
+    }
+    return res.status(200).json({ game })
+  })
 }
 
 const addToList = async (req, res) => {

@@ -25,7 +25,10 @@ const EditGame = () => {
     e.preventDefault()
     if (description !== '' && image !== '') {
       axios
-        .put(`http://localhost:3001/api/games/details/${id}/edit`)
+        .put(`http://localhost:3001/api/games/details/${id}/edit`, {
+          image: image,
+          description: description
+        })
         .catch((err) => console.log(err))
       navigate(`/games/details/${id}`)
     }

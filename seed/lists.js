@@ -7,18 +7,18 @@ const main = async () => {
     {
       name: 'My Favorites',
       games: [
-        '624728a20f0ba9e6a858b0f0',
-        '624728a20f0ba9e6a858b0f4',
-        '624728a20f0ba9e6a858b0f5'
+        '624efaff07eedbd6d84dfcd3',
+        '6624efaff07eedbd6d84dfce2',
+        '624efaff07eedbd6d84dfcec'
       ]
     },
 
     {
       name: 'Not My Favorites',
       games: [
-        '624728a20f0ba9e6a858b0f7',
-        '624728a20f0ba9e6a858b0f8',
-        '624728a20f0ba9e6a858b0f9'
+        '624efaff07eedbd6d84dfd02',
+        '624efaff07eedbd6d84dfce1',
+        '624efaff07eedbd6d84dfcd8'
       ]
     }
   ]
