@@ -8,17 +8,17 @@ const main = async () => {
       name: 'My Favorites',
       games: [
         '624efaff07eedbd6d84dfcd3',
-        '6624efaff07eedbd6d84dfce2',
-        '624efaff07eedbd6d84dfcec'
+        '624efaff07eedbd6d84dfcdf',
+        '624efaff07eedbd6d84dfce9'
       ]
     },
 
     {
       name: 'Not My Favorites',
       games: [
-        '624efaff07eedbd6d84dfd02',
-        '624efaff07eedbd6d84dfce1',
-        '624efaff07eedbd6d84dfcd8'
+        '624efaff07eedbd6d84dfcf2',
+        '624efaff07eedbd6d84dfcf8',
+        '624efaff07eedbd6d84dfcfa'
       ]
     }
   ]
@@ -28,7 +28,6 @@ const main = async () => {
 }
 
 const run = async () => {
-  await db.dropCollection('lists')
   await main()
   db.close()
 }

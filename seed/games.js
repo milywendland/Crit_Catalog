@@ -745,7 +745,6 @@ const main = async () => {
 }
 
 const run = async () => {
-  await db.dropDatabase()
   await main()
   db.close()
 }
