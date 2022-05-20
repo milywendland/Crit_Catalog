@@ -38,11 +38,9 @@ const editGame = async (req, res) => {
   Game.findByIdAndUpdate(id, req.body, { new: true }, (error, game) => {
     if (error) {
       res.status(500).send(error)
+    } else {
+      return res.status(200).json({ game })
     }
-    if (!game) {
-      res.status(500).send('oops! no game found.')
-    }
-    return res.status(200).json({ game })
   })
 }
 
